@@ -16,6 +16,20 @@ The main purpose of this project is to demonstrate:
 - Continuous Integration (CI)
 - Running tests automatically after code changes
 
+
+## CI Workflow
+
+This project uses GitHub Actions to automatically validate changes submitted through pull requests.
+
+The CI workflow:
+
+- Runs on pull requests targeting `main`
+- Tests Python 3.10, 3.11, and 3.12
+- Installs project dependencies
+- Runs automated tests
+- Checks Python syntax
+- Runs the application
+
 ## Project Structure
 
 ```text
@@ -27,3 +41,4 @@ explore-ci-cd/
 └── .github/
     └── workflows/
         └── ci.yml
+```
